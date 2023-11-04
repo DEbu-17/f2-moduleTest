@@ -242,4 +242,4 @@ function onClickDrawer(drawer){
   heroSection.style.display = "none";
 }
 
-console.log(1 - '1');
+

@@ -161,8 +161,9 @@ th{
      color: #d2d2d2;
 }
 .liked{
-background-color: red;
-
+  background-color: red;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .drawer{
   display: none;
