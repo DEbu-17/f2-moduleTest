@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    height: 80px;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+    
+}
+.cookpal>img{
+    margin-left: 100px;
+}
+
+.profile{
+  font-size: 10px ;
+  margin-top: -10px;
+}
+
+.icons>div:first-child{
+    color: #91c27d;
+}
+
+.hero-section{
+    background: url('./images/Rectangle\ 20\ \(1\).png');
+    width: 90%;
+    height: 355px;
+    background-repeat: no-repeat;
+   background-position: center;
+   margin: auto;
+   margin-top: 20px;
+   padding-top: 60px;
+   box-sizing: border-box;
+}
+#trending{
+    margin-left:130px;
+    width: 280px;
+}
+.Search-section{
+  margin-left: 120px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.Search-section>input{
+    width: 1250px;
+    height: 32px;
+    background-color: #f3f3f3;
+    border: none;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+button{
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.recipies-button{
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+.recipies-button>button{
+    height: 65px;
+    width: 180px;
+    border-radius: 10px;
+}
+.card-container{
+    display: flex;
+   
+    margin-top: 60px;
+}
+#filter{
+   margin-left: 120px;
+}
+.card{
+  background-color: white;
+ padding: 10px;
+  width: 290px;
+  height: 300px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ box-shadow: 0px 0px 100px lightgray;
+ border-radius: 10px;
+ 
+}
+.rating-section{
+    display: flex;
+    gap: 120px;
+    margin-bottom: 10px;
+}
+.like-section{
+    display: flex;
+    gap: 170px;
+}
+.my-cards{
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 30px;
+}
+footer{
+    height: 300px;
+    width: 100%;
+}
+.footer-section{
+    display: flex;
+    margin-top: 150px;
+    margin-left: 130px;
+}
+.para{
+    width: 50%;
+}
+table{
+    margin-left: -350px;
+   
+}
+td{
+    color: #bfbfbf;
+    margin-bottom: 10px;
+   
+    padding: 10px;
+}
+th{
+    color: #3e5362;
+}
+.btn{
+    background-color: green;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+}
+.media{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-tags{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 100px;
+}
+.type{
+    margin-left: -240px;
+     color: #d2d2d2;
+}
+.liked{
+background-color: red;
+
+}
+.drawer{
+  display: none;
+}
+
+.cookpal{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media  (max-width:480px) {
+   
+   .icons{
+    display: none;
+   }
+   .drawer{
+    display: block;
+   }
+   #filter{
+    min-width:50% !important;
+  
+   }
+ 
+}

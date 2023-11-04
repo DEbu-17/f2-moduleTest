@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    
+  </head>
+  <body>
+    <section id="header">
+     <div style="display: flex;"> 
+      <div><img class="drawer" onclick="onClickDrawer(this)" src="./images/menu.png" alt=""></div>
+     <div class="cookpal"><div style="margin-left: 60px;"><img src="./images/Cookpal 1.png" alt="" /></div></div>
+    </div>
+     
+      <div class="icons">
+        <div>Home</div>
+        <div>Explore</div>
+        <div>Help</div>
+        <div class="profile"><img src="./images/Ellipse 2.png" alt="" /></div>
+      </div>
+    </section>
+    <section class="hero-section">
+      <div id="trending">
+        <span style="color: #b94d26">Trending Now</span>
+        <h2 style="color: white">Mike's famous salad with cheese</h2>
+        <p style="color: white">By John Mike</p>
+      </div>
+    </section>
+    <section class="Search-section">
+      <p>Search For Recipies</p>
+      
+      <input
+        type="text"
+        id="search"
+        name="Search"
+        placeholder="search for recipies..."
+      />
+      <button onclick="clickOnSearchIcon(this)">
+        <img
+          style="height: 30px; margin-bottom: -11px; margin-left: -45px; padding-top: 20px;"
+          src="./images/Search-btn.png"
+          alt=""
+        />
+      </button>
+      <div class="recipies-button">
+        <button style="background-color: #eaaa00" onclick="allRecipies()">
+          All Recipies
+        </button>
+        <button style="background-color: #c4d600" onclick="vegRecipies()">Veg Recipies Only</button>
+        <button style="background-color: #dc582a" onclick="nonVegRecipies()">Non-Veg Recipies</button>
+      </div>
+    </section>
+    <section class="card-container">
+      <div id="filter" style="width: 50%">
+        <h4 style="margin-bottom: 40px">Filters</h4>
+        <p style="margin-bottom: 10px">Rating</p>
+        <input style="margin-right: 5px" type="checkbox" name="" id="" onclick="above4()"/>
+        <span style="color: #d2d2d2">4 and above</span><br />
+        <input style="margin-right: 5px" type="checkbox" onclick="below4()" />
+        <span style="color: #d2d2d2" >below 4</span>
+      </div>
+      <div class="my-cards">
+        <!-- <div class="card">
+          <div><img src="./images/rounded.png" style="margin-top: 10px" /></div>
+          <div style="margin-left: -240px; color: #d2d2d2">veg</div>
+          <div class="rating-section">
+            <p style="font-weight: bold">Russian Salad</p>
+            <div style="color: #d2d2d2" class="rating">
+              <img src="./images/Frame 28.png" alt="" />4.5
+            </div>
+          </div>
+          <div class="like-section">
+            <p style="color: #e06c43">40min</p>
+            <p>
+              <img src="./images/Vector (2).png" alt="" />
+              <img src="./images/Vector (3).png" alt="" />
+            </p>
+          </div>
+        </div> -->
+        
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-section">
+        <div>
+          <img src="./images/Cookpal 1.png" alt="" />
+          <p class="para" style="color: #536673;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            dicta, eum distinctio tempora placeat dolor qui ut ex iste
+            temporibus et nemo iusto dolores nihil assumenda recusandae illo
+            autem hic.
+          </p>
+        </div>
+        <div class="t">
+            <table>
+                <tr style="margin-bottom: 10px;">
+                    <th>Company</th>
+                    <th>Resources</th>
+                </tr>
+                <tr>
+                    <td>Home</td>
+                    <td>Blog</td>
+                </tr>
+                  <tr>
+                    <td>Explore</td>
+                    <td>Usecases</td>
+                </tr>
+                  <tr>
+                    <td>Team</td>
+                    <td>Testimonials</td>
+                </tr>
+                  <tr>
+                    <td>About Us</td>
+                    <td>Insights</td>
+                </tr>
+                  <tr>
+                    <td>Activity</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+              <img  style="margin-bottom: 15px;" src="./images/Cookpal 1.png" alt="" />
+              <p style="margin-bottom: 20px; color: #bfbfbf;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, sed molestiae.</p>
+              <input style="height: 30px; padding-left: 10px;" type="email" placeholder="Your Email"><img style="margin-left: -30px; margin-right: 10px;margin-bottom: -5px;" src="./images/Icon.png" alt="">
+              <button class="btn">Subscribe</button>
+        </div>
+      </div>
+      
+    </footer>
+     
+    <div class="media-tags">
+          <div class="media">
+            <img src="./images/instagram icon.png" alt="">
+      </div>
+      <div class="media">
+       <img src="./images/twitter icon.png" alt="">
+      </div>
+      <div class="media">
+       <img src="./images/linkedin icon.png" alt="">
+      </div>
+      <div class="media">
+       <img src="./images/facebook icon.png" alt="">
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
